@@ -17,13 +17,13 @@ def initalize_earth_engine():
     try:
         # For development - use user authentication
         ee.Initialize()
-        print("Earth engine initialized with user authentication")
+        print("Earth engine initialized with user authentication") # Use earthengine authenticate --auth_mode=localhost to authenticate
         return True
     except Exception as e:
         print(f"Earth engine initialization failed: {e}")
         try:
             # Fallback: try to authenticate first
-            ee.Authenticate()
+            ee.Authenticate(auth_mode='localhost')
             ee.Initialize()
             print("Earth engine initialized afer authentication")
             return True

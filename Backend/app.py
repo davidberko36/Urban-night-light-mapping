@@ -16,13 +16,17 @@ def initalize_earth_engine():
     #Initialize earth engine with authentication
     try:
         # For development - use user authentication
-        ee.Initialize()
-        print("Earth engine initialized with user authentication") # Use earthengine authenticate --auth_mode=localhost to authenticate
-        return True
+        service_key_path=os.getenv("EE_PRIVATE_KEY_PATH")
+        project_id = os.getenv("EE_PROJECT_ID")
+        service_account_email = os.getenv("EE_SERVICE_ACCOUNT_EMAIL")
+        if not service_key_path or not service_account_email:
+            raise Exception("Missing environment variables for Earth Engine authentication")
+        credentials = ee.ServiceAccountCredentials(service_account_email, service_key_path)
+        ee.Initialize(credentials, project=project_id)
     except Exception as e:
         print(f"Earth engine initialization failed: {e}")
         try:
-            # Fallback: try to authenticate first
+            # Fallback: try to authenticate first. Attempts to use account for auth
             ee.Authenticate(auth_mode='localhost')
             ee.Initialize()
             print("Earth engine initialized afer authentication")

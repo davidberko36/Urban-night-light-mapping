@@ -55,7 +55,7 @@ const initializeMap = () => {
       createMap();
     };
 
-    document.head.appendChild(script):
+    document.head.appendChild(script);
   } else {
     createMap();
   }

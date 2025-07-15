@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
+import './utilities.css';
 
 const API_BASE = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
 

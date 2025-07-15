@@ -1,0 +1,201 @@
+/* Theme Configuration for Urban Night Light Mapping App */
+
+/* Primary Theme - Dark Night Sky */
+.theme-dark {
+  --primary-color: #4a9eff;
+  --primary-hover: #357abd;
+  --primary-light: #6bb3ff;
+  --primary-dark: #2e7bcc;
+  
+  --secondary-color: #ffd700;
+  --secondary-hover: #e6c200;
+  
+  --background-dark: #000000;
+  --background-panel: rgba(0, 0, 0, 0.9);
+  --background-overlay: rgba(255, 255, 255, 0.1);
+  --background-card: rgba(15, 15, 35, 0.8);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #aaaaaa;
+  --text-disabled: #666666;
+  
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color-light: rgba(255, 255, 255, 0.2);
+  --border-color-dark: rgba(255, 255, 255, 0.05);
+  
+  --success-color: #4caf50;
+  --error-color: #f44336;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+  
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --glow-color: rgba(74, 158, 255, 0.3);
+}
+
+/* Alternative Theme - City Lights */
+.theme-city {
+  --primary-color: #ff6b35;
+  --primary-hover: #e55a2e;
+  --primary-light: #ff8a5b;
+  --primary-dark: #cc5429;
+  
+  --secondary-color: #35d9ff;
+  --secondary-hover: #2ec4e6;
+  
+  --background-dark: #0a0a0a;
+  --background-panel: rgba(20, 20, 30, 0.9);
+  --background-overlay: rgba(255, 165, 0, 0.1);
+  --background-card: rgba(25, 25, 40, 0.8);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-muted: #b0b0b0;
+  --text-disabled: #707070;
+  
+  --border-color: rgba(255, 165, 0, 0.2);
+  --border-color-light: rgba(255, 165, 0, 0.3);
+  --border-color-dark: rgba(255, 165, 0, 0.1);
+  
+  --success-color: #00e676;
+  --error-color: #ff5252;
+  --warning-color: #ffab00;
+  --info-color: #40c4ff;
+  
+  --shadow-color: rgba(255, 107, 53, 0.3);
+  --glow-color: rgba(255, 107, 53, 0.4);
+}
+
+/* Satellite Theme - Space Blue */
+.theme-satellite {
+  --primary-color: #00bcd4;
+  --primary-hover: #00acc1;
+  --primary-light: #26c6da;
+  --primary-dark: #0097a7;
+  
+  --secondary-color: #e91e63;
+  --secondary-hover: #d81b60;
+  
+  --background-dark: #000512;
+  --background-panel: rgba(0, 20, 40, 0.9);
+  --background-overlay: rgba(0, 188, 212, 0.1);
+  --background-card: rgba(0, 30, 60, 0.8);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #b3e5fc;
+  --text-muted: #81d4fa;
+  --text-disabled: #4fc3f7;
+  
+  --border-color: rgba(0, 188, 212, 0.2);
+  --border-color-light: rgba(0, 188, 212, 0.3);
+  --border-color-dark: rgba(0, 188, 212, 0.1);
+  
+  --success-color: #69f0ae;
+  --error-color: #ff6e40;
+  --warning-color: #ffc107;
+  --info-color: #40c4ff;
+  
+  --shadow-color: rgba(0, 188, 212, 0.3);
+  --glow-color: rgba(0, 188, 212, 0.5);
+}
+
+/* High Contrast Theme for Accessibility */
+.theme-high-contrast {
+  --primary-color: #ffffff;
+  --primary-hover: #f0f0f0;
+  --primary-light: #ffffff;
+  --primary-dark: #e0e0e0;
+  
+  --secondary-color: #ffff00;
+  --secondary-hover: #e6e600;
+  
+  --background-dark: #000000;
+  --background-panel: rgba(0, 0, 0, 0.95);
+  --background-overlay: rgba(255, 255, 255, 0.2);
+  --background-card: rgba(0, 0, 0, 0.9);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff;
+  --text-muted: #cccccc;
+  --text-disabled: #888888;
+  
+  --border-color: rgba(255, 255, 255, 0.5);
+  --border-color-light: rgba(255, 255, 255, 0.7);
+  --border-color-dark: rgba(255, 255, 255, 0.3);
+  
+  --success-color: #00ff00;
+  --error-color: #ff0000;
+  --warning-color: #ffff00;
+  --info-color: #00ffff;
+  
+  --shadow-color: rgba(255, 255, 255, 0.3);
+  --glow-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Theme Transition Animation */
+.theme-transition {
+  transition: 
+    color var(--transition-slow),
+    background-color var(--transition-slow),
+    border-color var(--transition-slow),
+    box-shadow var(--transition-slow);
+}
+
+/* Apply theme to root */
+:root {
+  /* Default to dark theme */
+  --primary-color: #4a9eff;
+  --primary-hover: #357abd;
+  --primary-light: #6bb3ff;
+  --primary-dark: #2e7bcc;
+  
+  --secondary-color: #ffd700;
+  --secondary-hover: #e6c200;
+  
+  --background-dark: #000000;
+  --background-panel: rgba(0, 0, 0, 0.9);
+  --background-overlay: rgba(255, 255, 255, 0.1);
+  --background-card: rgba(15, 15, 35, 0.8);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #aaaaaa;
+  --text-disabled: #666666;
+  
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color-light: rgba(255, 255, 255, 0.2);
+  --border-color-dark: rgba(255, 255, 255, 0.05);
+  
+  --success-color: #4caf50;
+  --error-color: #f44336;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+  
+  --border-radius: 8px;
+  --border-radius-small: 4px;
+  --border-radius-large: 12px;
+  
+  --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.4);
+  
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+}
